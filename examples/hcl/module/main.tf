@@ -7,23 +7,6 @@ terraform {
   }
 }
 
-
-variable "start_x" {
-  default = -1278
-}
-
-variable "start_y" {
-  default = 24
-}
-
-variable "start_z" {
-  default = 140
-}
-
-variable "height" {
-  default = 20
-}
-
 resource "mc_block" "block1" {
   count = var.height
 
